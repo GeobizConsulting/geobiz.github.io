@@ -9,9 +9,9 @@
         body {
             font-family: Arial, sans-serif;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 20px; /* 좌측 정렬을 위해 padding 추가 */
             margin: 0;
         }
         .button-container {
@@ -36,14 +36,15 @@
 
         .button-container {
             margin-top: 20px;
-            text-align: left;
         }
     </style>
 </head>
 <body>
 
     <h1>나 어디에서 자취하지?-서울편</h1>
-
+    
+    <!-- 줄바꿈 5번 추가 -->
+    <br><br><br><br><br>
 
     <div class="button-container">
         <!-- A 페이지로 이동하는 버튼 -->
