@@ -20,10 +20,24 @@
         th {
             background-color: #f2f2f2;
         }
+        /* 버튼 스타일 추가 */
         button {
-            padding: 10px 20px;
-            font-size: 16px;
+            padding: 15px 30px; /* 세로 15px, 가로 30px로 설정 */
+            font-size: 18px; /* 글자 크기 설정 */
+            background-color: #4CAF50; /* 녹색 배경 */
+            color: white; /* 흰색 글자 */
+            border: none; /* 테두리 제거 */
+            border-radius: 5px; /* 둥근 모서리 */
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049; /* 호버 시 더 어두운 녹색 */
+        }
+
+        .button-container {
             margin-top: 20px;
+            text-align: left;
         }
     </style>
 </head>
@@ -31,7 +45,16 @@
 
     <h1>직장/대학교로 자취동네 찾기</h1>
 
-    <button onclick="location.href='page1_광화문.html'">광화문</button>
+
+        <!-- 버튼 컨테이너 -->
+        <div class="button-container">
+            <!-- page1.html로 이동하는 버튼 -->
+            <button onclick="location.href='page1_광화문.html'">광화문</button>
+    
+            <!-- index.html로 이동하는 버튼 -->
+            <button onclick="location.href='index.html'">홈화면 돌아가기</button>
+        </div>
+
 
 </body>
 </html>
