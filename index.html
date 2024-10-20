@@ -3,25 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>서울 지하철역 목록</title>
+    <title>메인 페이지</title>
     <style>
+        /* 간단한 스타일 추가 */
         body {
             font-family: Arial, sans-serif;
-            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
         }
-        li {
-            padding: 5px 0;
+        .button {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            background-color: #f0f0f0;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #ddd;
         }
     </style>
 </head>
 <body>
-    <h1>서울 지하철역 목록</h1>
-    <ul id="station-list"></ul>
 
-    <script src="script.js"></script>
+    <div class="button-container">
+        <!-- A 페이지로 이동하는 버튼 -->
+        <button class="button" onclick="location.href='page1.html'">직장/대학교 기반 추천 페이지</button>
+        
+        <!-- B 페이지로 이동하는 버튼 -->
+        <button class="button" onclick="location.href='page2.html'">동적 웹지도 탐색 페이지</button>
+    </div>
+
 </body>
 </html>
