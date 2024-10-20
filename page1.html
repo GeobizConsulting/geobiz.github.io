@@ -20,19 +20,34 @@
         th {
             background-color: #f2f2f2;
         }
-        /* 버튼 스타일 추가 */
-        button {
+
+
+                /* 기본 버튼 스타일 */
+                button {
             padding: 15px 30px; /* 세로 15px, 가로 30px로 설정 */
             font-size: 18px; /* 글자 크기 설정 */
-            background-color: #4CAF50; /* 녹색 배경 */
             color: white; /* 흰색 글자 */
             border: none; /* 테두리 제거 */
             border-radius: 5px; /* 둥근 모서리 */
             cursor: pointer;
         }
 
-        button:hover {
+        /* 기본 녹색 버튼 스타일 */
+        button.default {
+            background-color: #4CAF50; /* 녹색 배경 */
+        }
+
+        button.default:hover {
             background-color: #45a049; /* 호버 시 더 어두운 녹색 */
+        }
+
+        /* 핑크색 버튼 스타일 */
+        button.pink {
+            background-color: #FF69B4; /* 핑크색 배경 */
+        }
+
+        button.pink:hover {
+            background-color: #FF1493; /* 호버 시 더 진한 핑크색 */
         }
 
         .button-container {
@@ -49,10 +64,10 @@
         <!-- 버튼 컨테이너 -->
         <div class="button-container">
             <!-- page1.html로 이동하는 버튼 -->
-            <button onclick="location.href='page1_광화문.html'">광화문</button>
+            <button class="default" onclick="location.href='page1_광화문.html'">광화문</button>
     
             <!-- index.html로 이동하는 버튼 -->
-            <button onclick="location.href='index.html'">홈화면 돌아가기</button>
+            <button class="pink" onclick="location.href='index.html'">홈화면 돌아가기</button>
         </div>
 
 
