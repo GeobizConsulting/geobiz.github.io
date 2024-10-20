@@ -19,16 +19,24 @@
             flex-direction: column;
             gap: 20px;
         }
-        .button {
-            padding: 10px 20px;
-            font-size: 18px;
+        /* 버튼 스타일 추가 */
+        button {
+            padding: 15px 30px; /* 세로 15px, 가로 30px로 설정 */
+            font-size: 18px; /* 글자 크기 설정 */
+            background-color: #4CAF50; /* 녹색 배경 */
+            color: white; /* 흰색 글자 */
+            border: none; /* 테두리 제거 */
+            border-radius: 5px; /* 둥근 모서리 */
             cursor: pointer;
-            border: 1px solid #ccc;
-            background-color: #f0f0f0;
-            transition: background-color 0.3s ease;
         }
-        .button:hover {
-            background-color: #ddd;
+
+        button:hover {
+            background-color: #45a049; /* 호버 시 더 어두운 녹색 */
+        }
+
+        .button-container {
+            margin-top: 20px;
+            text-align: left;
         }
     </style>
 </head>
